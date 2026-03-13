@@ -1,7 +1,7 @@
 library(tidyverse)
 
 # read in raw data
-squirrels <- read_csv('../data/raw/2018_Central_Park_Squirrel_Census.csv')
+squirrels <- read_csv('data/raw/2018_Central_Park_Squirrel_Census.csv')
 
 # clean Date column
 squirrels <- squirrels |> 
@@ -17,4 +17,4 @@ squirrels <- squirrels |>
   filter(!is.na(age), age != "?")
 
 # save to CSV
-write_csv(squirrels, "../data/processed/squirrels.csv")
+write_csv(squirrels, "data/processed/squirrels.csv")
