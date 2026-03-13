@@ -12,8 +12,7 @@ FUR_ORDER   <- c("Gray", "Cinnamon", "Black")
 SHIFT_ORDER <- c("AM", "PM")
 
 # Paths
-APP_DIR   <- dirname(rstudioapi::getSourceEditorContext()$path)
-DATA_PATH <- file.path(APP_DIR, "data", "processed", "squirrels.csv")
+DATA_PATH <- file.path("data", "processed", "squirrels.csv")
 
 # Load data once at startup
 initial <- read_csv(DATA_PATH)
