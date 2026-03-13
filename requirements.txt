@@ -1,0 +1,10 @@
+pandas
+altair
+vegafusion
+vl-convert-python
+shiny
+shinywidgets
+folium
+geopandas
+matplotlib
+plotly
